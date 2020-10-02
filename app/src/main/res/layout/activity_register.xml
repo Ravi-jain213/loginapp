@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/texture_simple_background_748x468">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="60dp"
+        android:text="Login App"
+        android:textColor="#DDFFC107"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/nametext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="Enter Full Name"
+        android:textStyle="bold">
+
+    </TextView>
+
+
+    <EditText
+        android:id="@+id/editname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nametext"
+        android:hint="Enter your name"
+        android:padding="20dp" />
+
+    <TextView
+        android:id="@+id/emailtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editname"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="Enter your email"
+        android:textStyle="bold">
+
+    </TextView>
+
+
+    <EditText
+        android:id="@+id/edtemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailtext"
+        android:hint="Enter your email"
+        android:padding="20dp" />
+
+
+    <TextView
+        android:id="@+id/passwordtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtemail"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="Enter password"
+        android:textStyle="bold">
+
+    </TextView>
+
+
+    <EditText
+        android:id="@+id/editpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordtext"
+        android:hint="Enter your name"
+        android:inputType="textPassword"
+        android:padding="20dp" />
+
+    <Button
+        android:id="@+id/signUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editpassword"
+        android:padding="20dp"
+        android:text="Sign up" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/signUp"
+        android:padding="10dp"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>
